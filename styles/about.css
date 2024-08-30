@@ -1,0 +1,266 @@
+/* --------------------------------- Base CSS*/
+
+/* general style */
+html {
+  font-size: 1rem;
+  font-family: Merienda, Monaco, "Courier New", monospace;
+
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+  }
+}
+
+/* header navigation */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  z-index: 100;
+
+  .head-nav {
+    width: 40%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: yellowgreen;
+      font-size: 1.4em;
+      border-radius: 4em;
+      padding: 0.5em 1em;
+    }
+
+    a:hover {
+      background-color: yellowgreen;
+      color: black;
+      transition: color 0.3s;
+    }
+  }
+}
+
+/* -----main container*/
+main {
+  display: flex;
+  width: 100vw;
+
+  /* ----dark-tech section*/
+  .quote-section {
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0 2em;
+    margin-top: 20em;
+
+    .quote {
+      text-align: center;
+      line-height: 2em;
+      font-size: 2em;
+      /* color: #ffc300; */
+      color: yellowgreen;
+    }
+  }
+  /* ----about me section*/
+  #about-me-section {
+    width: 60%;
+    height: 100%;
+    color: #c0c0c0;
+    padding: 0 2em;
+
+    h1 {
+      margin-top: 2em;
+      text-align: center;
+      font-size: 4rem;
+      width: 100%;
+      white-space: nowrap;
+      padding-bottom: 0.5em;
+    }
+
+    p {
+      padding: 0.5em 0 1em 0;
+      font-size: 1.3em;
+      line-height: 1.7em;
+    }
+
+    .ul-li {
+      list-style: circle;
+      padding-left: 2em;
+    }
+
+    span {
+      color: greenyellow;
+    }
+
+    .signup-button {
+      font-size: 1em;
+      background-color: rgb(73, 99, 21);
+      color: black;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+
+    .signup-button:hover {
+      background-color: yellowgreen;
+    }
+
+    .back-to-top ul {
+      list-style: none;
+      /* display: flex; */
+    }
+
+    .back-to-top li {
+      margin-top: 4em;
+    }
+
+    .back-to-top .button {
+      width: 100%;
+      border-radius: 1em;
+      background-color: rgb(73, 99, 21);
+      display: flex;
+      justify-content: center;
+    }
+
+    .back-to-top .button:hover {
+      background-color: yellowgreen;
+      cursor: pointer;
+    }
+
+    .back-to-top a {
+      font-size: 1.5em;
+      color: #000000;
+      text-decoration: none;
+      padding: 0 7em;
+      transition: color 0.3s;
+    }
+
+    footer {
+      text-align: left;
+      font-size: 0.7em;
+      padding: 3em 0 0;
+    }
+  }
+}
+
+/* ------------------------------------Media QUERY */
+/* ----media query  for tablet*/
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0 10em;
+    background-color: black;
+
+    .head-nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      a {
+        border-radius: 2px;
+      }
+
+      a:hover {
+        background-color: #c0c0c0;
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+
+    .quote-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: static !important;
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+
+      .quote {
+        color: #c0c0c0;
+      }
+    }
+
+    #about-me-section {
+      width: 100%;
+
+      h1 {
+        padding-top: 1em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* ------------------------------------for mobile*/
+@media screen and (max-width: 430px) {
+  header {
+    padding: 0;
+
+    .head-nav {
+      a {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+        border-radius: 2px;
+      }
+
+      a:hover {
+        background-color: #c0c0c0;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+    .quote-section {
+      .quote {
+        color: #c0c0c0;
+        font-size: 2em;
+      }
+    }
+
+    #about-me-section {
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+        line-height: 2em;
+      }
+
+      .ul-li {
+        padding-left: 1.2em;
+      }
+
+      .back-to-top a {
+        font-size: 0.8em;
+        padding: 1.5em 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5a7bfc222a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/styles/media.css" />
+
+    <title>html-media</title>
+  </head>
+
+  <body>
+    <!-- --------------------------------header navigation -->
+    <header>
+      <div class="head-nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="/about.html">Home</a>
+            </li>
+            <li>
+              <a href="/alt-form.html">Form</a>
+            </li>
+            <li>
+              <a href="/alt-courses.html">Courses</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- h1 container -->
+      <div class="h1-container">
+        <h1>Media Elements</h1>
+      </div>
+
+      <!-- section for the picture media -->
+      <section class="media-pictures">
+        <p>image: Ebenezer</p>
+        <figure>
+          <picture>
+            <source
+              media="(min-width: 1020px)"
+              srcset="/assets/pictures/dark-large.webp"
+            />
+            <source
+              media="(min-width: 650px)"
+              srcset="/assets/pictures/dark-medium.webp"
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="/assets/pictures/dark-small.webp"
+            />
+            <img
+              src="/altschool-assignment/assets/pictures/dark--t.jpg"
+              alt="A Front-End Dev."
+            />
+            <figcaption>A Front-End Dev.</figcaption>
+          </picture>
+        </figure>
+      </section>
+
+      <!-- section for audio media -->
+      <section class="media-audio">
+        <p>Audio: A beautiful poetry</p>
+        <audio controls>
+          <source src="/assets/audio/fine poetry.mp3" type="audio/mp3" />
+          <source src="/assets/audio/fine poetry.mp4" type="audio/mp4" />
+          <source src="/assets/audio/fine poetry.ogg" type="audio/ogg" />
+          <source src="/assets/audio/fine poetry.wav" type="audio/wav" Your
+          browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- section for media video -->
+      <section class="media-video">
+        <p>Video: A beautiful poetry</p>
+        <video controls>
+          <source src="/assets/videos/fine poetry.MP4" type="video/mp4" />
+          <source src="/assets/videos/fine poetry.webm" type="video/webm" />
+          <source src="/assets/videos/fine poetry.ogv" type="video/ogv" />
+          your browser does not support the video element.
+        </video>
+      </section>
+
+      <!-- section for iframe -->
+      <section class="media-iframe">
+        <p>Iframe: Upcoming movies</p>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RrRSWAmgAF8?si=9UJYBF2M7IHv2UqB"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2024, Ebenezer Tiewei.</span>
+    </footer>
+  </body>
+</html>

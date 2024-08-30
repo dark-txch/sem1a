@@ -1,0 +1,196 @@
+/* --------------- Base CSS mobile workflow*/
+
+/* general style */
+html {
+  font-size: 1rem;
+  font-family: Merienda, Monaco, "Courier New", monospace;
+
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* header navigation */
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 0 0.7em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+
+  .head-nav {
+    width: 100%;
+
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+    }
+
+    nav ul li a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: yellowgreen;
+      font-size: 1em;
+      border-radius: 2em;
+      padding: 0.3em 1.2em;
+    }
+
+    nav ul li a:hover {
+      background-color: yellowgreen;
+      color: black;
+      transition: color 0.3s;
+    }
+  }
+}
+
+/* --------------------------------main container */
+main {
+  padding: 3rem 0.8rem;
+  .image-section {
+    display: none;
+  }
+
+  .sign-up-section {
+    .section-p {
+      font-size: 0.8em;
+      text-align: center;
+      font-weight: bold;
+      padding: 3em 0;
+
+      a {
+        text-decoration: none;
+        color: #6666ed;
+      }
+    }
+
+    .form-container {
+      h1 {
+        font-size: 1.4em;
+      }
+
+      h4 {
+        font-size: 0.8em;
+        word-spacing: 0.2em;
+        padding: 1.2em 0;
+        color: gray;
+      }
+
+      form {
+        display: grid;
+
+        .name-container {
+          .twins {
+            display: grid;
+            grid-row: 2;
+            padding: 1em 0 0;
+
+            label {
+              padding-bottom: 0.5em;
+            }
+            input {
+              background-color: rgb(245, 242, 242);
+              padding: 1.3em 0.8em;
+              outline: none;
+            }
+
+            input:hover {
+              border: 1px solid #6666ed;
+            }
+
+            input:focus {
+              border: 1px solid #6666ed;
+            }
+
+            input::placeholder {
+              font-size: 1.2em;
+              color: rgb(177, 175, 175);
+            }
+
+            select {
+              font-size: 1em;
+              background-color: rgb(245, 242, 242);
+              color: rgb(177, 175, 175);
+              padding: 1em 0.8em;
+              outline: none;
+            }
+          }
+
+          .password-view {
+            display: flex;
+            align-items: center;
+
+            input {
+              width: 100%;
+              position: relative;
+            }
+
+            span {
+              position: absolute;
+              right: 20px;
+              z-index: 1000;
+              color: rgb(164, 158, 158);
+              font-size: 0.8em;
+            }
+          }
+        }
+
+        h4 {
+          a {
+            color: #6666ed;
+          }
+        }
+
+        #submit-btn {
+          display: flex;
+          align-items: center;
+          margin-top: 1em;
+
+          input {
+            width: 100%;
+            font-size: 0.7em;
+            padding: 1.5em 0;
+            /* margin-top: 1em; */
+            background-color: #6666ed;
+            color: whitesmoke;
+            border-radius: 6px;
+            position: relative;
+          }
+          span {
+            color: rgb(250, 247, 247);
+            font-size: 1.6em;
+            position: absolute;
+            right: 190px;
+            z-index: 99;
+            /* color: red; */
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------madia query */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .name-container {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    gap: 20px;
+
+    .twins {
+      width: 100%;
+    }
+
+    .password-view {
+      span {
+      }
+    }
+  }
+}
