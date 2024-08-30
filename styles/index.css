@@ -19,14 +19,14 @@ html {
 
 /* header navigation */
 header {
-  width: 100%;
+  min-width: 100vw;
   display: flex;
   justify-content: right;
   position: fixed;
   z-index: 100;
 
   .head-nav {
-    width: 40%;
+    min-width: 40%;
 
     ul {
       display: flex;
@@ -54,8 +54,9 @@ header {
 
 /* -----main container*/
 main {
+  padding: 0 1em;
   display: flex;
-  width: 100vw;
+  min-width: 100vw;
 
   /* ----dark-tech section*/
   .quote-section {
@@ -65,14 +66,12 @@ main {
     top: 0;
     right: 0;
     z-index: 99;
-    padding: 0 2em;
     margin-top: 20em;
 
     .quote {
       text-align: center;
       line-height: 2em;
       font-size: 2em;
-      /* color: #ffc300; */
       color: yellowgreen;
     }
   }
@@ -80,8 +79,7 @@ main {
   #about-me-section {
     width: 60%;
     height: 100%;
-    color: #c0c0c0;
-    padding: 0 2em;
+    color: #e1e1e1;
 
     h1 {
       margin-top: 2em;
@@ -142,29 +140,35 @@ main {
     }
 
     .back-to-top a {
-      font-size: 1.5em;
+      font-size: 1em;
       color: #000000;
       text-decoration: none;
-      padding: 0 7em;
+      padding: 1em 5em;
       transition: color 0.3s;
+      margin-bottom: 7em;
     }
 
     footer {
+      background-color: #000000;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
       text-align: left;
       font-size: 0.7em;
-      padding: 3em 0 0;
+      padding: 1em 1em;
     }
   }
 }
 
 /* ------------------------------------Media QUERY */
 /* ----media query  for tablet*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   header {
-    padding: 0 10em;
     background-color: black;
 
     .head-nav {
+      margin-top: 0.5em;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -175,11 +179,12 @@ main {
       }
 
       a {
-        border-radius: 2px;
+        border-radius: 5px;
+        padding: 0.5em 1em;
       }
 
       a:hover {
-        background-color: #c0c0c0;
+        background-color: yellowgreen;
       }
     }
   }
@@ -218,17 +223,14 @@ main {
     padding: 0;
 
     .head-nav {
+      margin-top: 0.5em;
+
       a {
         display: flex;
         justify-content: space-between;
         font-size: 1.3em;
+        padding: 0.5em 1em;
         border-radius: 2px;
-      }
-
-      a:hover {
-        background-color: #c0c0c0;
-        color: rgb(0, 0, 0);
-        border-radius: 10px;
       }
     }
   }
