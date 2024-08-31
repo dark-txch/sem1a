@@ -3,7 +3,7 @@
 /* general style */
 html {
   font-size: 1rem;
-  font-family:  Merienda, "Courier New", monospace;
+  font-family: Merienda, "Courier New", monospace;
   font-weight: 500;
 
   * {
@@ -106,17 +106,19 @@ main {
           .twins {
             display: flex;
             flex-direction: column;
-            padding: 1em 0 0;
+            padding: 1.2em 0 0;
 
             label {
-              padding-bottom: 0.5em;
+              padding-bottom: 0.6em;
               font-size: 1em;
+              font-weight: 500;
               color: black;
             }
             input {
               background-color: rgb(245, 242, 242);
-              padding: 1.3em 0.8em;
+              padding: 1.5em 0.8em;
               outline: none;
+              width: 100%;
             }
 
             input:hover {
@@ -136,7 +138,7 @@ main {
               font-size: 1em;
               background-color: rgb(245, 242, 242);
               color: rgb(177, 175, 175);
-              padding: 1em 0.8em;
+              padding: 1.5em 0.8em;
               outline: none;
             }
           }
