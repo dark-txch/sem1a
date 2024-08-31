@@ -108,6 +108,7 @@ main {
       thead {
         background-color: rgb(165, 166, 163);
         padding: 0.5em 0;
+        font-size: 2em;
       }
 
       tbody {
@@ -115,13 +116,15 @@ main {
 
         .engine {
           background-color: rgb(1, 1, 114);
-          color: whitesmoke;
+          color: rgb(255, 255, 255);
           padding-left: 1em;
+          font-size: 1.7em;
         }
         td {
           background-color: rgb(1, 1, 114);
-          color: whitesmoke;
+          color: rgb(255, 255, 255);
           padding: 1em;
+          font-size: 1.2em;
         }
       }
     }

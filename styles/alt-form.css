@@ -3,7 +3,7 @@
 /* general style */
 html {
   font-size: 1rem;
-  font-family: Merienda, "Courier New", monospace;
+  font-family:  Merienda, "Courier New", monospace;
   font-weight: 500;
 
   * {
@@ -170,6 +170,7 @@ main {
           display: flex;
           align-items: center;
           margin-top: 1em;
+          padding-bottom: 5em;
 
           input {
             width: 100%;
@@ -186,8 +187,8 @@ main {
   }
 }
 
-footer {
-  /* background-color: #000000;
+.foot {
+  background-color: #000000;
   color: whitesmoke;
   position: fixed;
   bottom: 0;
@@ -195,7 +196,7 @@ footer {
   right: 0;
   text-align: left;
   font-size: 0.7em;
-  padding: 1em 1em; */
+  padding: 1em 1em;
 }
 
 /* -------------------------------madia query */

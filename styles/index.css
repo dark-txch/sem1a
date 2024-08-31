@@ -14,7 +14,7 @@ html {
   }
 
   body {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(11, 11, 11);
   }
 }
 
@@ -76,7 +76,7 @@ main {
       color: yellowgreen;
 
       span {
-        color: whitesmoke;
+        color: rgb(255, 255, 255);
       }
     }
   }
@@ -84,7 +84,7 @@ main {
   #about-me-section {
     width: 60%;
     height: 100%;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
 
     h1 {
       margin-top: 2em;
@@ -112,10 +112,10 @@ main {
     }
 
     .signup-button {
-      font-size: 0.8em;
+      font-size: 0.9em;
       padding: 0.7em;
-      background-color: rgb(73, 99, 21);
-      color: rgb(194, 194, 194);
+      background-color: rgb(91, 137, 0);
+      color: rgb(0, 0, 0);
       border-radius: 0.5em;
       cursor: pointer;
     }
@@ -123,6 +123,8 @@ main {
     .signup-button:hover {
       background-color: yellowgreen;
       color: black;
+      transition: color 0.3s;
+
     }
 
     .back-to-top ul {
@@ -137,7 +139,7 @@ main {
     .back-to-top .button {
       width: 100%;
       border-radius: 1em;
-      background-color: rgb(73, 99, 21);
+      background-color: rgb(91, 137, 0);
       display: flex;
       justify-content: center;
     }
@@ -149,8 +151,8 @@ main {
     }
 
     .back-to-top a {
-      font-size: 1em;
-      color: rgb(197, 197, 197);
+      font-size: 1.2em;
+      color: rgb(0, 0, 0);
       text-decoration: none;
       padding: 1em 5em;
       transition: color 0.3s;
