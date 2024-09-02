@@ -1,20 +1,22 @@
 /* --------------------------------- Base CSS*/
-
+/*----------------------- laptop */
 /* general style */
 html {
   font-size: 1rem;
   font-family: lotion, "Courier New", monospace;
   font-weight: 400;
+  height: webkit-fill-available;
+
+  body {
+    background-color: rgb(11, 11, 11);
+    height: webkit-fill-available;
+  }
 
   * {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
-  }
-
-  body {
-    background-color: rgb(11, 11, 11);
   }
 }
 
@@ -113,23 +115,21 @@ main {
 
     .signup-button {
       font-size: 0.9em;
-      padding: 0.7em;
-      background-color: rgb(91, 137, 0);
+      padding: 0.5em;
+      background-color: rgb(60, 90, 1);
       color: rgb(0, 0, 0);
       border-radius: 0.5em;
       cursor: pointer;
     }
 
     .signup-button:hover {
-      background-color: yellowgreen;
-      color: black;
+      background-color: rgb(122, 176, 14);
+      /* color: black; */
       transition: color 0.3s;
-
     }
 
     .back-to-top ul {
       list-style: none;
-      /* display: flex; */
     }
 
     .back-to-top li {
@@ -139,13 +139,13 @@ main {
     .back-to-top .button {
       width: 100%;
       border-radius: 1em;
-      background-color: rgb(91, 137, 0);
+      background-color: rgb(60, 90, 1);
       display: flex;
       justify-content: center;
     }
 
     .back-to-top .button:hover {
-      background-color: yellowgreen;
+      background-color: rgb(122, 176, 14);
       color: rgb(0, 0, 0);
       cursor: pointer;
     }
@@ -193,7 +193,6 @@ main {
         border-radius: 5px;
         padding: 0.5em 1em;
       }
-
     }
   }
   main {
@@ -208,8 +207,6 @@ main {
       width: 100%;
       height: 100vh;
       margin: 0;
-
-  
     }
 
     #about-me-section {
